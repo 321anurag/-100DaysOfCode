@@ -1,0 +1,61 @@
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+.container .quantity .Quantity_minus {
+  border-radius: 35px;
+  min-height: auto;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: xx-large;
+  background: aqua;
+}
+
+.container .quantity .Quantity_plus {
+  border-radius: 35px;
+  min-height: auto;
+  min-width: 60px;
+  min-height: 60px;
+  background: aqua;
+  font-size: xx-large;
+}
+
+.container .quantity .quantity_input {
+  width: 100px;
+  min-height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: xx-large;
+  background: rgb(232, 243, 243);
+}
+
+.container .quantity {
+  border-radius: 5px;
+  font-size: xx-large;
+  background: rgb(0, 0, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .btn {
+  width: 100px;
+  max-height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  background: rgb(0, 0, 49);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

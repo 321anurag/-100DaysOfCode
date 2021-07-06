@@ -36,7 +36,23 @@ class LinkedList{
     }
 
     detectLoop(){
-        //TODO
+        var slow_p = this.head;
+        var fast_p = this.head;
+        let loop = false;
+        while(slow_p != null && fast_p != null && fast_p.next!=null){
+            slow_p = slow_p.next;
+            fast_p = fast_p.next.next;
+            if(slow_p == fast_p){
+                loop = true;
+                console.log('Loop detected!');
+                break;
+            }
+
+        }
+        if (!loop) {
+            console.log('No loop found!')
+        }
+
     }
 }
 
@@ -49,7 +65,12 @@ let inputList = new LinkedList();
 inputList.add(2);
 inputList.add(3);
 inputList.add(4);
-inputList.add(5);
-inputList.add(6);
 
-inputList.printList();
+//try by commenting both or anyone!
+inputList.head.next.next.next = inputList.head;
+//inputList.head.next.next.next = inputList.head.next;
+
+//can not print using this method, in case of circular linked list!
+//inputList.printList();
+
+inputList.detectLoop();

@@ -1,0 +1,61 @@
+#REACT FREE CODE CAMP
+>Node modules - it is the directory where all the dependencies is being stored.
+>Babel - Babek is a javascript transpiller, it turns all the new syntax of JS to ES5,
+ensureing that the app runs smoothly.
+>Webpack - Works as a module bundler. Main features - bundling, resources, watch input changes, running Babel
+
+
+> import React from 'react' -- it a ES5 modules functionality 
+
+
+
+ReactDom.render(<Greeting/>, document.getElementById('root'));
+// must have the closing tag, if there is no closing tag.
+//In render function we pass two things whatever we are going to render and where are we going to render.
+render() - In render function we pass two things whatever we are going to render and where are we going to render.
+
+>stateless functional component - also known  as dumb components, they do not have state
+always have to return something [ if nothing then emty html ]
+
+//JSX Rules
+// return a single element
+you can return only one single element, i.e. you cannot return two adjacen elements as:
+return(
+    <div>
+    </div>
+    <div>
+    </div>
+);
+
+return(
+    <div>
+        <div>
+            // todo
+        </div>
+        <div>
+            // todo
+        </div>
+    </div>
+);
+
+// div /section/ article or Fragment
+
+we should use proper semantics in order to make code better readable and best practice
+or we can use React.Fragments also, <> </>
+
+// className instead of class
+
+class is a keyword so we use className to a div or other html attributes. [camelCase]
+
+// close every element
+
+closing tags are very important or else will give errors
+
+// formatting
+use paranthesis for safe side
+
+
+
+Nested Components, React Tools
+
+The idea of components is to split up your app in nice different chnks of functionality.

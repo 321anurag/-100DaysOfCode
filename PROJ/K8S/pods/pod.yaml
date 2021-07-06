@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-anurag
+  labels:
+    app: nginx-anurag-1
+    type: frontend
+    owner: anurag
+spec:
+  containers:
+    -  name: nginx-container
+       image: nginx

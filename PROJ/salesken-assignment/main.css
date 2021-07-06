@@ -1,0 +1,10 @@
+.canvascontainer {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+canvas {
+  width: 33vw;
+  height: 10vw;
+}
